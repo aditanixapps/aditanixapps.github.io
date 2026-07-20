@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aditanix Technologies — Apps for Everyday Business & Life</title>
-<meta name="description" content="Aditanix Technologies builds practical Android apps. Ezkeep: offline stock, billing & credit ledger for small businesses.">
+<meta name="description" content="Aditanix Technologies builds practical Android apps. Ezkeep: offline stock, billing & credit ledger for small businesses. EzNest: rent & tenant ledger for landlords.">
 <style>
-  :root { --teal:#0D9488; --cyan:#5EEAD4; --bg1:#072D2E; --bg2:#050A12; }
+  :root { --teal:#0D9488; --cyan:#5EEAD4; --gold:#FBBF24; --bg1:#072D2E; --bg2:#050A12; }
   * { margin:0; box-sizing:border-box; }
   body { font-family:-apple-system,Roboto,"Segoe UI",Arial,sans-serif; color:#fff;
          background:linear-gradient(135deg,var(--bg1),var(--bg2)); min-height:100vh; }
@@ -17,14 +17,18 @@
   .apps { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; }
   .app { background:rgba(255,255,255,.06); border:1px solid rgba(94,234,212,.3);
          border-radius:18px; padding:22px; }
+  .app.eznest { border:1px solid rgba(251,191,36,.35); }
   .app h3 { font-size:26px; margin-bottom:2px; }
   .app .tag { color:var(--cyan); font-weight:700; font-size:14px; margin-bottom:10px; }
+  .app.eznest .tag { color:var(--gold); }
   .app p { color:#cfe9e6; font-size:15px; line-height:1.55; margin-bottom:14px; }
   .badges span { display:inline-block; border:1.5px solid var(--cyan); border-radius:999px;
                  padding:3px 10px; font-size:11.5px; font-weight:700; margin:0 6px 8px 0; }
+  .app.eznest .badges span { border-color:var(--gold); color:var(--gold); }
   .app a.cta { display:inline-block; background:var(--teal); color:#fff; text-decoration:none;
                padding:10px 18px; border-radius:10px; font-weight:700; font-size:14px; margin-top:4px; }
   .app a.pp { color:var(--cyan); font-size:13px; margin-left:14px; }
+  .app.eznest a.pp { color:var(--gold); }
   .soon { opacity:.55; display:flex; align-items:center; justify-content:center;
           font-size:15px; color:#cfe9e6; min-height:120px; border-style:dashed; }
   footer { margin-top:52px; padding-top:18px; border-top:1px solid rgba(255,255,255,.15);
@@ -36,7 +40,6 @@
 <div class="wrap">
   <h1>Aditanix Technologies</h1>
   <p class="sub">Practical Android apps for everyday business &amp; life &mdash; simple, fast, and respectful of your data.</p>
-
   <h2>Our Apps</h2>
   <div class="apps">
     <div class="app">
@@ -49,9 +52,18 @@
       <a class="cta" href="https://play.google.com/store/apps/details?id=com.aditanix.ezkeep">Get it on Google Play</a>
       <a class="pp" href="ezkeep-privacy.html">Privacy Policy</a>
     </div>
+    <div class="app eznest">
+      <h3>EzNest</h3>
+      <div class="tag">Rent &bull; Tenant Ledger</div>
+      <div class="badges"><span>100% OFFLINE</span><span>WHATSAPP RECEIPTS</span><span>AUTO RENT DUES</span></div>
+      <p>The rent ledger that works like a notebook &mdash; but sends receipts. Automatic monthly rent
+      dues, one-tap WhatsApp PDF receipts, partial payments, deposit &amp; vacate settlement, tenant
+      statements, and expense tracking with profit reports. No login, no cloud.</p>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=com.aditanix.eznest">Get it on Google Play</a>
+      <a class="pp" href="eznest-privacy-policy.html">Privacy Policy</a>
+    </div>
     <div class="app soon">More apps coming soon</div>
   </div>
-
   <footer>
     &copy; 2026 Aditanix Technologies &nbsp;&bull;&nbsp; <a href="mailto:support@aditanix.com">support@aditanix.com</a><br>
     Registered MSME &mdash; India

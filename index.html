@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aditanix Technologies — Apps for Everyday Business & Life</title>
-<meta name="description" content="Aditanix Technologies builds practical Android apps. Ezkeep: offline stock, billing & credit ledger for small businesses. EzNest: rent & tenant ledger for landlords.">
+<meta name="description" content="Aditanix Technologies builds practical Android apps. Ezkeep: offline stock, billing & credit ledger for small businesses. EzNest: rent & tenant ledger for landlords. EzSplit: offline group & trip expense splitter.">
 <style>
-  :root { --teal:#0D9488; --cyan:#5EEAD4; --gold:#FBBF24; --bg1:#072D2E; --bg2:#050A12; }
+  :root { --teal:#0D9488; --cyan:#5EEAD4; --gold:#FBBF24; --indigo:#818CF8; --bg1:#072D2E; --bg2:#050A12; }
   * { margin:0; box-sizing:border-box; }
   body { font-family:-apple-system,Roboto,"Segoe UI",Arial,sans-serif; color:#fff;
          background:linear-gradient(135deg,var(--bg1),var(--bg2)); min-height:100vh; }
@@ -18,17 +18,22 @@
   .app { background:rgba(255,255,255,.06); border:1px solid rgba(94,234,212,.3);
          border-radius:18px; padding:22px; }
   .app.eznest { border:1px solid rgba(251,191,36,.35); }
+  .app.ezsplit { border:1px solid rgba(129,140,248,.35); }
   .app h3 { font-size:26px; margin-bottom:2px; }
   .app .tag { color:var(--cyan); font-weight:700; font-size:14px; margin-bottom:10px; }
   .app.eznest .tag { color:var(--gold); }
+  .app.ezsplit .tag { color:var(--indigo); }
   .app p { color:#cfe9e6; font-size:15px; line-height:1.55; margin-bottom:14px; }
   .badges span { display:inline-block; border:1.5px solid var(--cyan); border-radius:999px;
                  padding:3px 10px; font-size:11.5px; font-weight:700; margin:0 6px 8px 0; }
   .app.eznest .badges span { border-color:var(--gold); color:var(--gold); }
+  .app.ezsplit .badges span { border-color:var(--indigo); color:var(--indigo); }
   .app a.cta { display:inline-block; background:var(--teal); color:#fff; text-decoration:none;
                padding:10px 18px; border-radius:10px; font-weight:700; font-size:14px; margin-top:4px; }
+  .app.ezsplit a.cta { background:#4F46E5; }
   .app a.pp { color:var(--cyan); font-size:13px; margin-left:14px; }
   .app.eznest a.pp { color:var(--gold); }
+  .app.ezsplit a.pp { color:var(--indigo); }
   .soon { opacity:.55; display:flex; align-items:center; justify-content:center;
           font-size:15px; color:#cfe9e6; min-height:120px; border-style:dashed; }
   footer { margin-top:52px; padding-top:18px; border-top:1px solid rgba(255,255,255,.15);
@@ -61,6 +66,16 @@
       statements, and expense tracking with profit reports. No login, no cloud.</p>
       <a class="cta" href="https://play.google.com/store/apps/details?id=com.aditanix.eznest">Get it on Google Play</a>
       <a class="pp" href="eznest-privacy-policy.html">Privacy Policy</a>
+    </div>
+    <div class="app ezsplit">
+      <h3>EzSplit</h3>
+      <div class="tag">Group &bull; Trip &bull; PG Expense Splitter</div>
+      <div class="badges"><span>100% OFFLINE</span><span>4 SPLIT MODES</span><span>FILTER BY PERSON</span></div>
+      <p>Split group, trip and PG expenses fairly &mdash; four ways to divide any bill, smart settle-up
+      with the fewest possible payments, offline multi-currency for trips abroad, and a dedicated
+      view showing exactly who paid what. No login, no cloud.</p>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=com.aditanix.ezsplit">Get it on Google Play</a>
+      <a class="pp" href="ezsplit-privacy.html">Privacy Policy</a>
     </div>
     <div class="app soon">More apps coming soon</div>
   </div>
